@@ -1,34 +1,74 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Contact Manager
+
+A simple contact manager application built with React, Next.js, and TypeScript, using a JSON server.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [API Endpoints](#api-endpoints)
+
+## Introduction
+
+The Contact Manager is a web application that allows users to manage their contacts. It provides a user-friendly interface to add, view, update, and delete contact information.
+
+### Features
+
+- **Contact List:** View a list of all contacts.
+- **Add Contact:** Add a new contact with a name, email, and phone number.
+- **Edit Contact:** Modify existing contact information.
+- **Delete Contact:** Remove a contact from the list.
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm installed.
+- Knowledge of React, Next.js, TypeScript, and basic JSON server setup.
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   ```bash
+   git clone https://github.com/your-username/contact-manager.git
+2. Navigate to the project directory::
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```bash
+   cd contact-manager
+3. Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   ```bash
+   npm install
+4. Start the JSON server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   ```bash
+   npm run json-server
+5. Start the development server:
 
-## Learn More
+   ```bash
+   npm run dev
+5. Open your browser and visit http://localhost:3000 to access the Contact Manager application.
 
-To learn more about Next.js, take a look at the following resources:
+## Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**components/**: React components used throughout the application.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+**api/**: API service for interacting with the JSON server.
 
-## Deploy on Vercel
+**data/contacts.json**: JSON data file used by the JSON server to store contact information.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**types/**: Interfaces used throughout the application.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## API Endpoints
+
+- **getAllContacts /contacts**: Get a list of all contacts.
+
+- **addContact /contacts**: Add a new contact.
+
+- **editContact /contacts/:id**: Update an existing contact.
+
+- **deleteContact /contacts/:id**: Delete a contact.

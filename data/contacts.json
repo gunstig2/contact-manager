@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "id": 1694162079983,
+      "name": "Peter",
+      "email": "peter@gmail.com",
+      "phoneNumber": "0633847755"
+    },
+    {
+      "id": 1694163096556,
+      "name": "Justin",
+      "email": "justin@gmail.com",
+      "phoneNumber": "0644958866"
+    }
+  ]
+}
