@@ -51,7 +51,7 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    npm run dev
-5. Open your browser and visit http://localhost:3000 to access the Contact Manager application.
+5. Open your browser and visit <http://localhost:3000> to access the Contact Manager application.
 
 ## Project Structure
 
